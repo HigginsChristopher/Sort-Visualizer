@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chiggi24.SortingVisualizer.SortingHubController">
+    <Button layoutX="660.0" layoutY="350.0" mnemonicParsing="false" onAction="#sortEvent" prefHeight="25.0" prefWidth="50.0" text="Sort" />
+    <Button layoutX="720.0" layoutY="350.0" mnemonicParsing="false" onAction="#resetEvent" prefHeight="25.0" prefWidth="50.0" text="Reset" />
+    <Slider fx:id="arraySize" layoutX="320.0" layoutY="350.0" max="128.0" min="32.0" onDragDetected="#initializeArray" onInputMethodTextChanged="#initializeArray" onMouseClicked="#initializeArray" onMouseDragged="#initializeArray" prefHeight="25.0" prefWidth="300.0" value="64.0" />
+    <ComboBox fx:id="algorithmName" layoutX="90.0" layoutY="350.0" onAction="#setSortingStrategy" prefWidth="150.0" />
+    <Label layoutX="250.0" layoutY="350.0" text="Array Size" />
+    <Label layoutX="25.0" layoutY="350.0" text="Algorithm" />
+    <Label fx:id="arraySizeBox" layoutX="630.0" layoutY="350.0" prefHeight="25.0" prefWidth="20.0" text="64" />
+    <Pane fx:id="myPane" layoutX="24.0" layoutY="9.0" prefHeight="327.0" prefWidth="752.0" style="-fx-border-color: black; -fx-background-color: Gainsboro;" />
+</AnchorPane>
